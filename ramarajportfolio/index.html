@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ramarajportfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#">
+            <h1><span>RA</span>MA<span>RA</span>J</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+			<li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>RAMARAJ <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+		
+      </div>
+    </div>
+  </section>
+  
+  <!-- End Hero Section  -->
+  
+  
+  
+  <!-----Slider--------->
+  
+    <div class="banner">
+  <div class="slides_container">
+        <img class="mySlides" src="./assets/1_Air.jpg">
+        <img class="mySlides" src="./assets/2_Natural.jpg">
+        <img class="mySlides" src="./assets/3_Animal.jpg">
+        <img class="mySlides" src="./assets/4_Crowd.jpg">
+        <img class="mySlides" src="./assets/6_Flowers.jpg">
+		<img class="mySlides" src="./assets/10_Fish.jpg">
+      </div>
+	  </div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	
+ 
+  <!-----End Slider------->
+  
+  
+  
+   
+
+  <!--Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Ser<span>vi</span>ces</h1>
+        <p>I'm a Data Scinece with Software Developer with several years of professional experience. 
+		Our team focuses on Research Projects such as Data Science in  Data Analytics, Data Driven Applications, Mobile Applications, Web Site Research and Development, Web Marketing & Branding.  We are providing fruitful applications for industry as well as individual clients. 
+		<p>We are follow and assure that Creativity, Honesty, Successs.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="./assets/data_science1.png" /></div>
+          <h2>DATA SCIENCE</h2>
+          <p> We are creativity in devising research questions, ability to analyze data and draw insights, 
+		  willingness to collaborate with others, and ability to clearly communicate their findings to Business Operations. Our focus skills on SPSS, Python, and Tableau</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="./assets/web1.png" /></div>
+          <h2>WEB DEVELOPMENT</h2>
+          <p>Web Development is building out the visual components for  website and web apps. 
+		  Using HTML, CSS , Javascript, angular Js, React js, PHP, Node Js with Mongo db and I have built websites with interactive elements. This also include integrating backend.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="./assets/business.png" /></div>
+          <h2>CONSULTANT</h2>
+          <p>I am dealing with internal and external clients for  Project Analysis and documentation. I am  offereing a dynamic business consulting team that continuously assists its clients in improving performance beyond benchmarks</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="./assets/research1.png" /></div>
+          <h2>RESEARCH</h2>
+          <p>I am Professional Researcher, so I deal with  projects like as Information Technology, Management, Behavioural Science, Media Science, Educational Technology etc. I raised questions for each one project which is :  Who, What, When Where,Why and How? for research solution</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project:1</h1>
+            <h2>UI/UX Media Design</h2>
+            <p>TOOLS: Adobe Photoshop, Illustrator, Indesign, Flash, Cooledit Pro, Premiere Pro, After Effects, FCP  </p>
+          </div>
+          <div class="project-img">
+            <img src="./assets/1_VK_AD.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project: 2</h1>
+            <h2>Web Development</h2>
+            <p>TOOLS: Visual Studio Code, HTML, CSS, Javascript, Angular, React, PHP, MYSQL  </p>
+          </div>
+          <div class="project-img">
+            <img src="./assets/2_Uohmac.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project: 3</h1>
+            <h2>Consulting</h2>
+            <p>TOOLS : SWOT ANALYSIS, SMART ANALYSIS, PEST ANALYSIS </p>
+          </div>
+          <div class="project-img">
+            <img src="./assets/3_Uohmac_Technology.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project: 4</h1>
+            <h2>Data Analytics</h2>
+            <p>TOOLS : Python, SPSS , Tableau, SQL </p>
+          </div>
+          <div class="project-img">
+            <img src="./assets/4_VK_Brownexpat.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project: 5</h1>
+            <h2>Documentation</h2>
+            <p>TOOS : WORD, LATEX </p>
+          </div>
+          <div class="project-img">
+            <img src="./assets/5_AI.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./assets/myself.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Software Developer</h2>
+        <p>Hello! My name is <span>RAMARAJ MUNISAMY</span> and I enjoy creating things that live on the internet. 
+		My interest on Data Science and Web Development. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
+		<P>Here are a few technologies I've been working with recently</P>
+		
+        <a href="#" class="cta">Download CV</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="./assets/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 883 836 5612</h2>
+            
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="./assets/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>ramarajmsu@gmail.com</h2>
+            
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="./assets/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Tamil Nadu,India</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>RA</span>MA<span>RA</span>J</h1>
+      </div>
+      <h2>Feel Free Follow<h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/ramaraj-m-12b9051b7"><img src="./assets/linkedin.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./assets/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/Ramaraj2020"><img src="./assets//github.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./assets/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2021 ramaraj. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  
+</body>
+
+</html>
